@@ -1,0 +1,4019 @@
+
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <style>
+                    body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                }
+                
+                    p{
+                        margin-left: 60px;
+                    }
+                    h1{
+                        margin-left: 30px;
+                    }
+                    h2{
+                        margin-left: 40px;
+                    }
+                    h3{
+                        margin-left: 50px;
+                    }
+                    h4{
+                        margin-left: 60px;
+                    }
+                    table{
+                        border: 1px solid black;
+                        margin-left: 60px;
+                        margin-right: auto;
+                        text-align: center;
+                    }
+                    .center {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                </style>
+            </head>
+        <body>
+
+
+        <div style="background-color:black;color:white;padding:30px;font-size: 60px;">Demo Of NVSR</div>
+        <div style="background-color:lightgrey;padding:30px 30px 25px">
+        </div>
+        <div> <ul><li><a href="#Comparison-with-SOTA-methods15325">
+ Comparison-with-SOTA-methods
+</a></li><ul><li><a href="#p363_002.wav91776">
+ p363_002.wav
+</a></li><li><a href="#p360_008.wav5320">
+ p360_008.wav
+</a></li><li><a href="#p362_012.wav79335">
+ p362_012.wav
+</a></li><li><a href="#p364_002.wav87941">
+ p364_002.wav
+</a></li><li><a href="#p360_005.wav67174">
+ p360_005.wav
+</a></li><li><a href="#p364_004.wav76710">
+ p364_004.wav
+</a></li><li><a href="#p361_009.wav45671">
+ p361_009.wav
+</a></li><li><a href="#p364_004.wav22353">
+ p364_004.wav
+</a></li><li><a href="#p362_012.wav49865">
+ p362_012.wav
+</a></li></ul><li><a href="#NVSR-performance-on-different-resolutions13051">
+ NVSR-performance-on-different-resolutions
+</a></li><ul><li><a href="#p363_004.wav58489">
+ p363_004.wav
+</a></li><li><a href="#p361_001.wav60644">
+ p361_001.wav
+</a></li><li><a href="#p360_010.wav27651">
+ p360_010.wav
+</a></li><li><a href="#p376_006.wav27658">
+ p376_006.wav
+</a></li><li><a href="#p362_005.wav23512">
+ p362_005.wav
+</a></li><li><a href="#p360_002.wav5924">
+ p360_002.wav
+</a></li><li><a href="#p363_008.wav74511">
+ p363_008.wav
+</a></li><li><a href="#p363_002.wav17836">
+ p363_002.wav
+</a></li><li><a href="#p374_001.wav8169">
+ p374_001.wav
+</a></li></ul><li><a href="#Example-of-bandwidth-mismatch54959">
+ Example-of-bandwidth-mismatch
+</a></li><ul><li><a href="#p374_006.wav64996">
+ p374_006.wav
+</a></li><li><a href="#p364_005.wav31216">
+ p364_005.wav
+</a></li><li><a href="#p374_004.wav23637">
+ p374_004.wav
+</a></li><li><a href="#p362_016.wav33422">
+ p362_016.wav
+</a></li><li><a href="#p376_003.wav38552">
+ p376_003.wav
+</a></li><li><a href="#p376_004.wav82103">
+ p376_004.wav
+</a></li><li><a href="#p364_008.wav27232">
+ p364_008.wav
+</a></li><li><a href="#p364_001.wav98832">
+ p364_001.wav
+</a></li><li><a href="#p362_011.wav87255">
+ p362_011.wav
+</a></li></ul></ul><h2 id="Comparison-with-SOTA-methods15325">
+ Comparison-with-SOTA-methods
+</h2>
+<h3 id="p363_002.wav91776">
+ p363_002.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *Nuwave
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   NVSR
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   4kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p363_002_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p363_002_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p363_002_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p363_002_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p363_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p363_002_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p363_002_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p363_002_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p363_002_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p363_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   8kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p363_002_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p363_002_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p363_002_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p363_002_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p363_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p363_002_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p363_002_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p363_002_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p363_002_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p363_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   12kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p363_002_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p363_002_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p363_002_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p363_002_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p363_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p363_002_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p363_002_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p363_002_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p363_002_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p363_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p360_008.wav5320">
+ p360_008.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *Nuwave
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   NVSR
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   4kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p360_008_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p360_008_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p360_008_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p360_008_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p360_008_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p360_008_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p360_008_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p360_008_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p360_008_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p360_008_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   8kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p360_008_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p360_008_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p360_008_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p360_008_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p360_008_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p360_008_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p360_008_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p360_008_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p360_008_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p360_008_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   12kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p360_008_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p360_008_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p360_008_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p360_008_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p360_008_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p360_008_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p360_008_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p360_008_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p360_008_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p360_008_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p362_012.wav79335">
+ p362_012.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *Nuwave
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   NVSR
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   4kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p362_012_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p362_012_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   8kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p362_012_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p362_012_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   12kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p362_012_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p362_012_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p364_002.wav87941">
+ p364_002.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *Nuwave
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   NVSR
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   4kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p364_002_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p364_002_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p364_002_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p364_002_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p364_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p364_002_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p364_002_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p364_002_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p364_002_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p364_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   8kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p364_002_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p364_002_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p364_002_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p364_002_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p364_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p364_002_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p364_002_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p364_002_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p364_002_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p364_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   12kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p364_002_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p364_002_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p364_002_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p364_002_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p364_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p364_002_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p364_002_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p364_002_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p364_002_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p364_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p360_005.wav67174">
+ p360_005.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *Nuwave
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   NVSR
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   4kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p360_005_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p360_005_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p360_005_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p360_005_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p360_005_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p360_005_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p360_005_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p360_005_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p360_005_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p360_005_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   8kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p360_005_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p360_005_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p360_005_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p360_005_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p360_005_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p360_005_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p360_005_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p360_005_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p360_005_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p360_005_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   12kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p360_005_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p360_005_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p360_005_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p360_005_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p360_005_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p360_005_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p360_005_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p360_005_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p360_005_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p360_005_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p364_004.wav76710">
+ p364_004.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *Nuwave
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   NVSR
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   4kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p364_004_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p364_004_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   8kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p364_004_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p364_004_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   12kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p364_004_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p364_004_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p361_009.wav45671">
+ p361_009.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *Nuwave
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   NVSR
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   4kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p361_009_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p361_009_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p361_009_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p361_009_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p361_009_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p361_009_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p361_009_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p361_009_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p361_009_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p361_009_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   8kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p361_009_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p361_009_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p361_009_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p361_009_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p361_009_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p361_009_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p361_009_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p361_009_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p361_009_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p361_009_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   12kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p361_009_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p361_009_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p361_009_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p361_009_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p361_009_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p361_009_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p361_009_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p361_009_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p361_009_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p361_009_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p364_004.wav22353">
+ p364_004.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *Nuwave
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   NVSR
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   4kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p364_004_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p364_004_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   8kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p364_004_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p364_004_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   12kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p364_004_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p364_004_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p364_004_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p364_004_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p364_004_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p364_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p362_012.wav49865">
+ p362_012.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *Nuwave
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   NVSR
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   4kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p362_012_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_4000_48000_processed_nuwave_random_cutoff_fft.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_4_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/d_NVSR/p362_012_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/a_4kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   8kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p362_012_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_8000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_8_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/d_NVSR/p362_012_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/b_8kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   12kHz
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p362_012_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/a_Unprocessed/p362_012_mic1.flacproc_fft_12000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/b_*Nuwave/p362_012_mic1.flacproc_fft_12000_48000_processed_NuWaveTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/c_*WSRGlow/p362_012_mic1.flac.flacproc_fft_12000_24000_processed_WSRGlow_12_new_10.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/d_NVSR/p362_012_mic1.flacproc_fft_12000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/a_Comparison-with-SOTA-methods/c_12kHz/e_Target/p362_012_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table><h2 id="NVSR-performance-on-different-resolutions13051">
+ NVSR-performance-on-different-resolutions
+</h2>
+<h3 id="p363_004.wav58489">
+ p363_004.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   2kHz
+  </td>
+  <td>
+   4kHz
+  </td>
+  <td>
+   8kHz
+  </td>
+  <td>
+   16kHz
+  </td>
+  <td>
+   24kHz
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p363_004_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p363_004_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p363_004_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p363_004_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p363_004_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p363_004_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p363_004_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p363_004_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p363_004_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p363_004_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   NVSR
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p363_004_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p363_004_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p363_004_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p363_004_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p363_004_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p363_004_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p363_004_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p363_004_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p363_004_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p363_004_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Target
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p363_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p363_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p363_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p363_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p363_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p363_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p363_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p363_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p363_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p363_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p361_001.wav60644">
+ p361_001.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   2kHz
+  </td>
+  <td>
+   4kHz
+  </td>
+  <td>
+   8kHz
+  </td>
+  <td>
+   16kHz
+  </td>
+  <td>
+   24kHz
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p361_001_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p361_001_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p361_001_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p361_001_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p361_001_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p361_001_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p361_001_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p361_001_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p361_001_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p361_001_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   NVSR
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p361_001_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p361_001_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p361_001_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p361_001_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p361_001_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p361_001_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p361_001_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p361_001_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p361_001_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p361_001_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Target
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p361_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p361_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p361_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p361_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p361_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p361_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p361_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p361_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p361_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p361_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p360_010.wav27651">
+ p360_010.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   2kHz
+  </td>
+  <td>
+   4kHz
+  </td>
+  <td>
+   8kHz
+  </td>
+  <td>
+   16kHz
+  </td>
+  <td>
+   24kHz
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p360_010_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p360_010_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p360_010_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p360_010_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p360_010_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p360_010_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p360_010_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p360_010_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p360_010_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p360_010_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   NVSR
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p360_010_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p360_010_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p360_010_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p360_010_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p360_010_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p360_010_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p360_010_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p360_010_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p360_010_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p360_010_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Target
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p360_010_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p360_010_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p360_010_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p360_010_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p360_010_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p360_010_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p360_010_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p360_010_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p360_010_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p360_010_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p376_006.wav27658">
+ p376_006.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   2kHz
+  </td>
+  <td>
+   4kHz
+  </td>
+  <td>
+   8kHz
+  </td>
+  <td>
+   16kHz
+  </td>
+  <td>
+   24kHz
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p376_006_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p376_006_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p376_006_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p376_006_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p376_006_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p376_006_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p376_006_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p376_006_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p376_006_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p376_006_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   NVSR
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p376_006_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p376_006_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p376_006_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p376_006_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p376_006_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p376_006_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p376_006_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p376_006_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p376_006_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p376_006_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Target
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p376_006_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p376_006_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p376_006_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p376_006_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p376_006_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p376_006_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p376_006_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p376_006_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p376_006_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p376_006_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p362_005.wav23512">
+ p362_005.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   2kHz
+  </td>
+  <td>
+   4kHz
+  </td>
+  <td>
+   8kHz
+  </td>
+  <td>
+   16kHz
+  </td>
+  <td>
+   24kHz
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p362_005_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p362_005_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p362_005_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p362_005_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p362_005_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p362_005_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p362_005_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p362_005_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p362_005_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p362_005_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   NVSR
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p362_005_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p362_005_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p362_005_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p362_005_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p362_005_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p362_005_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p362_005_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p362_005_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p362_005_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p362_005_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Target
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p362_005_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p362_005_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p362_005_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p362_005_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p362_005_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p362_005_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p362_005_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p362_005_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p362_005_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p362_005_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p360_002.wav5924">
+ p360_002.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   2kHz
+  </td>
+  <td>
+   4kHz
+  </td>
+  <td>
+   8kHz
+  </td>
+  <td>
+   16kHz
+  </td>
+  <td>
+   24kHz
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p360_002_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p360_002_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p360_002_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p360_002_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p360_002_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p360_002_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p360_002_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p360_002_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p360_002_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p360_002_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   NVSR
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p360_002_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p360_002_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p360_002_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p360_002_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p360_002_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p360_002_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p360_002_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p360_002_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p360_002_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p360_002_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Target
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p360_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p360_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p360_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p360_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p360_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p360_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p360_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p360_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p360_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p360_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p363_008.wav74511">
+ p363_008.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   2kHz
+  </td>
+  <td>
+   4kHz
+  </td>
+  <td>
+   8kHz
+  </td>
+  <td>
+   16kHz
+  </td>
+  <td>
+   24kHz
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p363_008_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p363_008_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p363_008_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p363_008_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p363_008_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p363_008_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p363_008_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p363_008_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p363_008_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p363_008_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   NVSR
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p363_008_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p363_008_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p363_008_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p363_008_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p363_008_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p363_008_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p363_008_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p363_008_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p363_008_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p363_008_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Target
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p363_008_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p363_008_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p363_008_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p363_008_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p363_008_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p363_008_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p363_008_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p363_008_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p363_008_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p363_008_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p363_002.wav17836">
+ p363_002.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   2kHz
+  </td>
+  <td>
+   4kHz
+  </td>
+  <td>
+   8kHz
+  </td>
+  <td>
+   16kHz
+  </td>
+  <td>
+   24kHz
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p363_002_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p363_002_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p363_002_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p363_002_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p363_002_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p363_002_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p363_002_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p363_002_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p363_002_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p363_002_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   NVSR
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p363_002_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p363_002_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p363_002_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p363_002_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p363_002_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p363_002_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p363_002_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p363_002_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p363_002_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p363_002_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Target
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p363_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p363_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p363_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p363_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p363_002_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p363_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p363_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p363_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p363_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p363_002_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p374_001.wav8169">
+ p374_001.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   2kHz
+  </td>
+  <td>
+   4kHz
+  </td>
+  <td>
+   8kHz
+  </td>
+  <td>
+   16kHz
+  </td>
+  <td>
+   24kHz
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p374_001_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p374_001_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p374_001_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p374_001_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p374_001_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/a_2kHz/p374_001_mic1.flacproc_fft_2000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/b_4kHz/p374_001_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/c_8kHz/p374_001_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/d_16kHz/p374_001_mic1.flacproc_fft_16000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/a_Unprocessed/e_24kHz/p374_001_mic1.flacproc_fft_24000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   NVSR
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p374_001_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p374_001_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p374_001_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p374_001_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p374_001_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/a_2kHz/p374_001_mic1.flacproc_fft_2000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/b_4kHz/p374_001_mic1.flacproc_fft_4000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/c_8kHz/p374_001_mic1.flacproc_fft_8000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/d_16kHz/p374_001_mic1.flacproc_fft_16000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/b_NVSR/e_24kHz/p374_001_mic1.flacproc_fft_24000_44100_processed_NVSRPostProcTestee.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Target
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p374_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p374_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p374_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p374_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p374_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/a_2kHz/p374_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/b_4kHz/p374_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/c_8kHz/p374_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/d_16kHz/p374_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/b_NVSR-performance-on-different-resolutions/c_Target/e_24kHz/p374_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table><h2 id="Example-of-bandwidth-mismatch54959">
+ Example-of-bandwidth-mismatch
+</h2>
+<h3 id="p374_006.wav64996">
+ p374_006.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_4k
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p374_006_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p374_006_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p374_006_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p374_006_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p374_006_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p374_006_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_8K
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p374_006_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p374_006_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p374_006_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p374_006_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p374_006_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p374_006_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p364_005.wav31216">
+ p364_005.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_4k
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p364_005_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p364_005_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p364_005_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p364_005_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p364_005_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p364_005_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_8K
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p364_005_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p364_005_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p364_005_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p364_005_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p364_005_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p364_005_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p374_004.wav23637">
+ p374_004.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_4k
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p374_004_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p374_004_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p374_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p374_004_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p374_004_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p374_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_8K
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p374_004_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p374_004_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p374_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p374_004_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p374_004_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p374_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p362_016.wav33422">
+ p362_016.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_4k
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p362_016_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p362_016_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p362_016_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p362_016_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p362_016_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p362_016_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_8K
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p362_016_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p362_016_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p362_016_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p362_016_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p362_016_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p362_016_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p376_003.wav38552">
+ p376_003.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_4k
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p376_003_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p376_003_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p376_003_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p376_003_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p376_003_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p376_003_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_8K
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p376_003_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p376_003_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p376_003_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p376_003_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p376_003_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p376_003_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p376_004.wav82103">
+ p376_004.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_4k
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p376_004_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p376_004_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p376_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p376_004_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p376_004_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p376_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_8K
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p376_004_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p376_004_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p376_004_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p376_004_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p376_004_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p376_004_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p364_008.wav27232">
+ p364_008.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_4k
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p364_008_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p364_008_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p364_008_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p364_008_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p364_008_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p364_008_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_8K
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p364_008_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p364_008_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p364_008_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p364_008_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p364_008_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p364_008_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p364_001.wav98832">
+ p364_001.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_4k
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p364_001_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p364_001_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p364_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p364_001_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p364_001_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p364_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_8K
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p364_001_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p364_001_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p364_001_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p364_001_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p364_001_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p364_001_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table>
+<h3 id="p362_011.wav87255">
+ p362_011.wav
+</h3>
+<table>
+ <tr>
+  <td>
+  </td>
+  <td>
+   Unprocessed
+  </td>
+  <td>
+   *WSRGlow
+  </td>
+  <td>
+   Target
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_4k
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p362_011_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p362_011_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p362_011_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/a_Unprocessed/p362_011_mic1.flacproc_fft_4000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/b*WSRGlow/p362_011_mic1.flac.flacproc_fft_4000_24000_processed_WSRGlow_12_on_4000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/a_Trained_24k_Test_4k/c_Target/p362_011_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Trained_24k_Test_8K
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p362_011_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p362_011_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.wav" type="audio/wav"/>
+   </audio>
+  </td>
+  <td>
+   <audio controls="">
+    <source src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p362_011_mic1.flacproc_fft_94000_48000_processed_target.wav" type="audio/wav"/>
+   </audio>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   Spectrogram
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/a_Unprocessed/p362_011_mic1.flacproc_fft_8000_48000_processed_UnprocessTestee.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/b_*WSRGlow/p362_011_mic1.flac.flacproc_fft_8000_24000_processed_WSRGlow_12_on_8000.png" width="200"/>
+  </td>
+  <td>
+   <img alt="fname" height="125" src="/Users/liuhaohe/projects/demopage-NVSR/resources/c_Example-of-bandwidth-mismatch/b_Trained_24k_Test_8K/c_Target/p362_011_mic1.flacproc_fft_94000_48000_processed_target.png" width="200"/>
+  </td>
+ </tr>
+</table> </div>
+        </body>
+        </html>
+    
