@@ -15,6 +15,7 @@ cmap = plt.get_cmap('inferno')
 ROOT = "/Users/liuhaohe/projects/demopage-NVSR/resources"
 PATTERN = "[ps][0-9]+_[0-9]+"
 NUM=9
+FILE_ID = []
 
 def list_dir(path):
     ret = []
@@ -37,6 +38,7 @@ def draw_spec(filepath):
     return save_path
 
 def get_the_file_path_for_a_row(row_path, ancher):
+    global FILE_ID
     ret = []
     valid_paths = list_dir(row_path)
     if(len(valid_paths) == 0): raise ValueError("Error: files not found in path %s" % row_path)
@@ -44,8 +46,13 @@ def get_the_file_path_for_a_row(row_path, ancher):
     for file in os.listdir(os.path.join(row_path, valid_paths[0])):
         if(".wav" not in file[-5:]): continue
         else: files.append(file)
+    files = sorted(files)
+    if(len(FILE_ID) <= 1): FILE_ID = list(range(len(files)))
     if(ancher is None):
-        ancher = sorted(files)[int(random.randint(0, 6))*10 + int(random.randint(0, 9))] # todo, you may need to change this line from time to time
+        index = random.randint(0, len(FILE_ID)) # todo, you may need to change this line from time to time
+        # print(FILE_ID, ancher)
+        ancher = files[FILE_ID[index]]
+        FILE_ID.remove(FILE_ID[index])
     try:
         ancher = re.findall(PATTERN, os.path.basename(ancher))[0]
     except Exception as e:
